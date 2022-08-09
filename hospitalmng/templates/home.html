@@ -1,0 +1,274 @@
+    {% include 'base.html' %}
+    {% load static%}
+    {% include 'navigation.html' %}
+
+
+    {% block content %}
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/1111.jpg' %}" class="d-block h-50 w-100 " alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="background-1">
+                    <h2>Postoperative Care</h2>
+                    <p>Postoperative care is the care you receive after a surgical procedure. The type of postoperative
+                        care you need depends on the type of surgery you have, as well as your health history. It often
+                        includes pain management and wound care.
+                    </p>
+                    <button class="btn btn-light"><a href="#departments" class="nav-link">See All Services</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/s.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-white">
+                <div class="background-1">
+                    <h2>Surgery</h2>
+                    <p>Surgery is a medical specialty that uses operative manual and instrumental techniques on a person
+                        to investigate or treat a pathological condition such as a disease or injury, to help improve
+                        bodily function or appearance or to repair unwanted ruptured areas.
+                    </p>
+                    <button class="btn btn-light"><a href="#departments" class="nav-link">See All Services</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/neo.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-white">
+                <div class="background-1">
+                    <h2>Neonatal intensive care unit</h2>
+                    <p>A neonatal intensive care unit, also known as an intensive care nursery, is an intensive care
+                        unit specializing in the care of ill or premature newborn infants. Neonatal refers to the first
+                        28 days of life. Neonatal care, as known as specialized nurseries or intensive care, has been
+                        around since the 1960s.
+                    </p>
+                    <button class="btn btn-light"><a href="#departments" class="nav-link">See All Services</a></button>
+                </div>
+
+                <!------
+                <div class="background-2">
+
+                </div>
+
+                -->
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+<!----------------------Introduction Section------------->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="">
+        </div>
+        <div class="col-md-4" id="intro-text">
+            <h1 class="text-center">
+                <h1 class="text-center">Welcome to hospital management system </h1>
+            </h1>
+            <p class="text-justify">
+            <h5>Samsung Medical Center was founded on November 9, 1994 with the philosophy of "contributing to improving the health of the nation through the best medical care, advanced medical research and technology, and contributing to the development of outstanding medical personnel.".</h5>
+            </p>
+            <img src="">
+        </div>
+        <div class="col-md-4">
+            <div class="container-fluid">
+                <br>
+                <button class="btn btn-outline-success"><a href="/admin/hospitalmng/appointment/add/" class="nav-link"><i
+                            class="fa fa-calendar-event"></i>&nbsp;&nbsp;&nbsp;&nbsp;Request
+                        Appointments</a></button>
+                <br>
+                <button class="btn btn-outline-success"><a href="#doctors" class="nav-link"><i
+                            class="fa fa-user-md"></i>&nbsp;&nbsp;&nbsp;&nbsp;Find
+                        Doctors</a></button>
+                <br>
+                <button class="btn btn-outline-success"><a href="/contact/" class="nav-link"><i
+                            class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;&nbsp;Location</a></button>
+                <br>
+                <button class="btn btn-outline-success"><a href="/contact/" class="nav-link"><i
+                            class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;Emergency
+                        Contact</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------Inroduction Section End---------------------->
+
+
+<!--------------Medical Services -------------------->
+<div class="col-md-12">
+    <h1 class="text-center">Leading Specializations</h1>
+</div>
+
+<div class="card-group">
+
+ <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/mrt.jpg' %}" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Radiology</h5>
+      <p class="card-text">Diagnostic radiology refers to the field of medicine that uses non-invasive imaging scans to diagnose a patient.</p>
+      <a href="admin/hospitalmng/appointment/add/" class="btn btn-success">Make an appointment</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'images/kn.jpg' %}" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Orthopedic and Surgery</h5>
+      <p class="card-text">Orthopaedic surgery is a specialty dealing with acute injuries, congenital and acquired disorders and chronic arthritic or overuse conditions of the bones.</p>
+      <a href="admin/hospitalmng/appointment/add/" class="btn btn-success">Make an appointment</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/dp.jpg' %}" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Neurology</h5>
+      <p class="card-text">Learn about innovative diagnosis and treatment of adults and children with neurological conditions, including epilepsy, movement disorders and dementia.</p>
+      <a href="admin/hospitalmng/appointment/add/" class="btn btn-success">Make an appointment</a>
+    </div>
+  </div>
+</div>
+
+<!----------------------Medical Services End--------------->
+
+<!-----------------------------Other Services Section Beginning-------------------->
+<div class="container-fluid" id="services">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Other Services</h1>
+        </div>
+    </div>
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/g.jpg' %} " class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pre-Pregnancy Health Care </h5>
+        <p class="card-text"> Medical care that is given before pregnancy to improve the chances of a healthy pregnancy. This care includes a physical exam; counseling about nutrition, exercise, and medications; and treatment of certain medical conditions.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/room.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hospital</h5>
+        <p class="card-text">Seoul clinic hospitals have a variety of private and semi-private rooms, including deluxe accommodations.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/usg.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">USG</h5>
+        <p class="card-text">Ultrasound imaging uses a transducer or probe to generate sound waves and produce pictures of the body's internal structures.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!------------------------------End of Other services---------------------->
+
+
+<!---------------------We team Section End---------------------->
+<div class="col-md-12">
+    <h1 class="text-center text-primary">Our Team of Experts</h1>
+
+</div>
+<div class="carousel-inner">
+    <img src=" " style="max-width: 100%;">
+</div>
+
+<!---------------------We team Section End---------------------->
+
+<!-------------------Meet Our Team Section----------------->
+
+<div class="container-fluid" id="doctors">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Specialist Doctors</h1>
+        </div>
+    </div>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/d p.jpg' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Xyz</h5>
+        <p class="card-text">Senior Consultant Surgeon
+MBBS, MS(TU), FMAS, DMAS (WLH</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'Images/f.jpg'%}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Consultant Physician</h5>
+        <p class="card-text">MBBS, MD (Internal Medicine).</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/2.jpg' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Dr.Phonendoscope</h5>
+        <p class="card-text">Orthopedic Surgeon
+MBBS, MS Orthopedic</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/dc.jpg' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Happy Man</h5>
+        <p class="card-text">Gynecologist And Obstetrician
+MBBS, MD (NMC)</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %} {% include 'footer.html' %}

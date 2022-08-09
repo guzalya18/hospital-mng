@@ -1,0 +1,35 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+<style>
+    .mydivstyle:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(-20px);
+    }
+</style>
+
+
+{% block content %}
+<div class="container" style="margin-top: 50px">
+    <h1 class="text-center">Contact us</h1>
+    <div class="row mt-5 text-center ">
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fa fa-solid fa-phone"></i>Contancts</h4>
+            <p class="text-danger font-weight-bold mt-3"><a href="tel:82 - 2 - 3410 - 0200, 1141">82 - 2 - 3410 - 0200</a></p>
+        </div>
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fa fa-solid fa-envelope-open"></i>E-mail</h4>
+            <p class="font-weight-bold mt-3"><a href="mailto:ihs.smc@samsung.com">ihs.smc@samsung.com</a></p>
+        </div>
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fa fa-solid fa-map"></i>On the map</h4>
+            <p class="font-weight-bold mt-3"><a href="http://maps.google.com/maps?q=SAMSUNG MEDICAL CENTER"> 81 Irwon-Ro Gangnam-gu. Seoul, Korea</a></p>
+        </div>
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fa fa-solid fa-calendar-check"></i>Work hours</h4>
+            <p class="font-weight-bold mt-3">Monday-Friday: 08:00–17:00 Saturday: 08:00–12:00</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% include 'footer.html' %}
